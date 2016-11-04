@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The List:
+  <ion-list>
+    <ion-item *ngFor="let item of items"(click)="itemClicked($event, item)"
+  <h3>{{item.name}}</h3>
+</ion-item>
+</ion-list>
+</ion-content>
